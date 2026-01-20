@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #6b726b80;
+}
+
+.logo-icon {
+    color: #16a34a;
+    font-size: 30px;
+}
+
+.primary-btn {
+    background-color: #16a34a;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-container {
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-basis: 50%;
+
+}
+
+.hero-text-tag {
+    background-color: #e5e7eb;
+    color: #6b7280;
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+.hero-heading {
+    font-size: 50px;
+}
+
+.hero-paragraph {
+    color: #6b7280;
+}
+
+.hero-lists {
+    list-style: none;
+    color: #6b7280;
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-list i {
+    color: #16a34a;
+}
+
+.outlined-btn {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 7px; 
+    border: 1px solid #e5e7eb;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-image {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.how-it-works {
+    background-color: #e2f2f2;
+    padding: 50px 20px;
+}
+
+.how-it-works-title {
+    text-align: center;
+}
+
+.how-it-works-title h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.how-it-works-title p {
+    color: #6b7280;
+}
+
+.how-it-works-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.how-it-works-card {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.how-it-works-card h4 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.how-it-works-card p {
+    color: #6b7280;
+}
+
+.card-icon {
+    display: flex;
+    background-color: #e2f2f2;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #16a34a;
+}
+
+.everything-you-need {
+    padding: 50px 20px;
+}
+
+.everything-you-need-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.everything-you-need-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.everything-you-need-title {
+    text-align: center;
+}
+
+.everything-you-need-title h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.everything-you-need-title p {
+    color: #6b7280;
+}
+
+.everything-you-need-card h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.everything-you-need-card p {
+    color: #6b7280;
+}
+
+.everything-you-need-card ul {
+    color: #6b7280;
+    list-style: none;
+}
+
+.simplify-groceries-container {
+    background-color: #e2f2f2;
+    padding: 50px 20px;
+}
+
+.simplify-groceries-wrapper {
+    background-color: #16a34a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 50px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.simply-groceries-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.simply-groceries-text h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.simply-groceries-text p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.groceries-btn {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+.footer-container {
+    padding: 50px 20px;
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-content-wrapper p {
+    color: #6b7280;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
