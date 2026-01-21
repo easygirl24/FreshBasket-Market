@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
+html {
+    /* this represent 16px = 1rem */
+    /* font-size: 100%; */
+    /* 10 / 16 = 0.625, 0.625 x 100 = 62.5% */
+    font-size: 62.5%;
+}
+
+/* 632px, 740px, 1024px, 1280px */
+
+@media (max-width:1280px) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
 }
+
 
 .logo-wrapper {
     display: flex;
@@ -17,14 +35,21 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2rem;
     border-bottom: 1px solid #e5e7eb;
 }
 
 .nav-items {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+}
+
+@media (max-width:700px) {
+    .nav-items {
+        display: none;
+    }
+
 }
 
 .nav-item a {
@@ -34,7 +59,7 @@ body {
 
 .logo-icon {
     color: #16a34a;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .primary-btn {
@@ -42,12 +67,12 @@ body {
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 5px;
 }
 
 .hero-container {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +82,7 @@ body {
 .hero-contents {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
     flex-basis: 50%;
 
 }
@@ -66,12 +91,18 @@ body {
     background-color: #e5e7eb;
     color: #6b7280;
     width: fit-content;
-    padding: 2px 10px;
+    padding: 2px 1rem;
     border-radius: 20px;
 }
 
 .hero-heading {
-    font-size: 50px;
+    font-size: 5rem;
+}
+
+@media (max-width:900px) {
+    .hero-heading {
+        font-size: 3rem;
+    }
 }
 
 .hero-paragraph {
@@ -97,25 +128,44 @@ body {
     text-decoration: none;
     color: #000000;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 7px; 
     border: 1px solid #e5e7eb;
 }
 
 .hero-btn-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .hero-image {
-    width: 500px;
-    height: 400px;
-    border-radius: 10px;
+    width: 50rem;
+    height: 40rem;
+    border-radius: 1rem;
+}
+
+@media (max-width:900px) {
+    .hero-image {
+        width: 40rem;
+        height: 30rem;
+
+    }
+}
+
+@media (max-width:700px) {
+    .hero-image-wrapper {
+        display: none;
+
+    }
+    .hero-contents {
+        flex-basis: 100%;
+    }
 }
 
 .how-it-works {
     background-color: #e2f2f2;
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .how-it-works-title {
@@ -123,7 +173,7 @@ body {
 }
 
 .how-it-works-title h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
 }
 
@@ -133,22 +183,28 @@ body {
 
 .how-it-works-cards {
     display: flex;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width:640px) {
+    .how-it-works-cards {
+        flex-direction: column;
+    }
 }
 
 .how-it-works-card {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    border-radius: 10px;
+    gap: 1.5rem;
+    border-radius: 1rem;
 }
 
 .how-it-works-card h4 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 .how-it-works-card p {
@@ -158,8 +214,8 @@ body {
 .card-icon {
     display: flex;
     background-color: #e2f2f2;
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -167,20 +223,26 @@ body {
 }
 
 .everything-you-need {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .everything-you-need-cards {
     display: flex;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (max-width:640px) {
+    .everything-you-need-cards {
+        flex-direction: column;
+    }
 }
 
 .everything-you-need-card {
-    padding: 30px;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
@@ -190,7 +252,7 @@ body {
 }
 
 .everything-you-need-title h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
 }
 
@@ -200,7 +262,7 @@ body {
 
 .everything-you-need-card h4 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .everything-you-need-card p {
@@ -214,7 +276,7 @@ body {
 
 .simplify-groceries-container {
     background-color: #e2f2f2;
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .simplify-groceries-wrapper {
@@ -222,8 +284,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 50px 50px;
+    gap: 2rem;
+    padding: 5rem;
     color: #ffffff;
     border-radius: 5px;
 }
@@ -231,7 +293,7 @@ body {
 .simply-groceries-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .simply-groceries-text h3 {
@@ -239,22 +301,22 @@ body {
     font-weight: 500;
 }
 
-.simply-groceries-text p {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+.simplify-groceries-text p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .groceries-btn {
     text-decoration: none;
     color: #000000;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 7px;
     background-color: #ffffff;
 }
 
 .footer-container {
-    padding: 50px 20px;
+    padding: 5rem 2rem;
 }
 
 .footer-content-wrapper {
@@ -265,7 +327,7 @@ body {
 
 .footer-content-wrapper p {
     color: #6b7280;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
 }
 
